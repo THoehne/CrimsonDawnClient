@@ -3,9 +3,13 @@ package net.cdc.gui.eventlistener.targetedevent;
 import javax.swing.*;
 
 public abstract class TargetedEventListener {
-    protected JComponent component;
+    protected JComponent target;
 
-    public void setComponent(JComponent component) {
-        this.component = component;
+    public void setTarget(JComponent component) {
+        this.target = component;
+    }
+
+    public JComponent getTarget() {
+        return target;
     }
 }
